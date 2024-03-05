@@ -1025,4 +1025,8 @@ footer {
   .sideMenu {
     width: 50%;
   }
+
+  .cardButtons{
+    margin-top: 0;
+  }
 }
