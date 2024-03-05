@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- Brand Logo -->
+      <div class="brandLogoContainer">
+        <img src="Assets/RV_central_logo.svg" alt="" class="brandLogo" />
+        <button
+          class="hamburgerSideMenuContainer phoneModeHamburger"
+          onclick="toggleSideMenu()"
+        >
+          <img
+            src="Assets/hamburger_icon_black.svg"
+            alt=""
+            class="hamburgerSideMenu"
+          />
+        </button>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navBar">
+        <div class="navBarSocialContainer">
+          <div class="navBarSocial">
+            <button class="fBSocialNavContainer">
+              <img src="Assets/fb_logo_black.svg" alt="" class="fBSocialNav" />
+            </button>
+            <button class="instaSocialNavContainer">
+              <img
+                src="Assets/insta_logo_black.svg"
+                alt=""
+                class="instaSocialNav"
+              />
+            </button>
+            <button class="phoneSocialNavContainer">
+              <img
+                src="Assets/phone_logo_white.svg"
+                alt=""
+                class="phoneSocialNav"
+              />
+              <span>Call Us Now</span>
+            </button>
+          </div>
+        </div>
+        <ul class="navBarOne">
+          <!-- Nav With SubMenu -->
+          <li class="navOneItem">Home</li>
+          <li class="navOneDropDownItem navOneItem">
+            <span class="dropBtn">Our Stock</span>
+            <img
+              src="Assets/navBarOne_dropdown_logo.svg"
+              alt=""
+              class="dropDownLogo"
+            />
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="navOneDropDownItem navOneItem">
+            <span>Our Range</span>
+            <img
+              src="Assets/navBarOne_dropdown_logo.svg"
+              alt=""
+              class="dropDownLogo"
+            />
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="navOneItem">About Us</li>
+          <li class="navOneDropDownItem navOneItem">
+            <span>Contact Us</span>
+            <img
+              src="Assets/navBarOne_dropdown_logo.svg"
+              alt=""
+              class="dropDownLogo"
+            />
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <button class="hamburgerSideMenuContainer" onclick="toggleSideMenu()">
+            <img
+              src="Assets/hamburger_icon_black.svg"
+              alt=""
+              class="hamburgerSideMenu"
+            />
+          </button>
+        </ul>
+      </nav>
+      <div
+        class="coverOverlaySideMenu removeElement"
+        onclick="toggleSideMenu()"
+      ></div>
+      <!-- Sidemenu -->
+      <div class="sideMenu translateYFull">
+        <h1 class="sideMenuHeading">Side Menu</h1>
+        <ul class="sideMenuItemsList">
+          <li onclick="toggleSideMenu()">Link 1</li>
+          <li onclick="toggleSideMenu()">Link 2</li>
+          <li onclick="toggleSideMenu()">Link 3</li>
+          <li onclick="toggleSideMenu()">Link 4</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="heroContainer">
+        <div class="leftHero">
+          <div class="headingHero">
+            <span class="headingHeroOne"
+              >Your Next Adventure With
+              <span class="headingHeroTwo">Style</span></span
+            >
+          </div>
+          <div class="descHero">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div class="formContainer">
+            <!-- Form (Computer Mode) -->
+            <form action="#" class="computerForm">
+              <ul class="formSearchBar">
+                <li class="locationSearchInput">
+                  <select
+                    class="selectLocationForm"
+                    name="locationData"
+                    id="locationData"
+                  >
+                    <option value="none" selected disabled hidden>
+                      Location
+                    </option>
+                    <option value="delhi">Karnataka</option>
+                    <option value="pune">Delhi</option>
+                    <option value="mumbai">Gujarat</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="mumbai">Kolkata</option>
+                  </select>
+                </li>
+                <li class="newOrUsedSearchInput">
+                  <select
+                    class="selectNewOrUsedForm"
+                    name="newOrUsedData"
+                    id="newOrUsedData"
+                  >
+                    <option value="none" selected disabled hidden>
+                      New or Used
+                    </option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                  </select>
+                </li>
+                <li class="makeSearchInput">
+                  <select class="selectMakeForm" name="makeData" id="makeData">
+                    <option value="none" selected disabled hidden>Make</option>
+                    <option value="2002">2021</option>
+                    <option value="2001">2022</option>
+                    <option value="2000">2023</option>
+                    <option value="2000">2024</option>
+                  </select>
+                </li>
+                <li class="modelSearchInput">
+                  <select
+                    class="selectModelForm"
+                    name="modelData"
+                    id="modelData"
+                  >
+                    <option value="none" selected disabled hidden>Model</option>
+                    <option value="uv-1">Choice1</option>
+                    <option value="uv-2">Choice2</option>
+                    <option value="uv-3">Choice3</option>
+                    <option value="uv-3">Choice4</option>
+                  </select>
+                </li>
+                <li class="typeSearchInput">
+                  <select class="selectTypeForm" name="typeData" id="typeData">
+                    <option value="none" selected disabled hidden>Type</option>
+                    <option value="uv-1">Class-A</option>
+                    <option value="uv-2">Class-B</option>
+                    <option value="uv-3">Class-C</option>
+                    <option value="uv-3">Fifth Wheel</option>
+                  </select>
+                </li>
+                <li class="formSearchButton">
+                  <button type="submit" class="formSubmitButton">
+                    <img
+                      src="Assets/search_icon.png"
+                      alt="search"
+                      class="searchIcon"
+                    />
+                    Search
+                  </button>
+                </li>
+              </ul>
+            </form>
+            <!-- Form (Mobile Mode) -->
+            <form action="#" class="mobileForm">
+              <ul class="formSearchBar">
+                <li class="locationSearchInput">
+                  <select
+                    class="selectLocationForm"
+                    name="locationData"
+                    id="locationData"
+                  >
+                    <option value="none" selected disabled hidden>
+                      Location
+                    </option>
+                    <option value="delhi">Karnataka</option>
+                    <option value="pune">Delhi</option>
+                    <option value="mumbai">Gujarat</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="mumbai">Kolkata</option>
+                  </select>
+                </li>
+                <li class="newOrUsedAndMakeSearchInput">
+                  <select
+                    class="selectNewOrUsedForm"
+                    name="newOrUsedData"
+                    id="newOrUsedData"
+                  >
+                    <option value="none" selected disabled hidden>
+                      New or Used
+                    </option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                  </select>
+                  <select class="selectMakeForm" name="makeData" id="makeData">
+                    <option value="none" selected disabled hidden>Make</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                  </select>
+                </li>
+                <li class="modelAndTypeSearchInput">
+                  <select
+                    class="selectModelForm"
+                    name="modelData"
+                    id="modelData"
+                  >
+                    <option value="none" selected disabled hidden>Model</option>
+                    <option value="uv-1">uv-1</option>
+                    <option value="uv-2">uv-2</option>
+                    <option value="uv-3">uv-3</option>
+                  </select>
+                  <select class="selectTypeForm" name="typeData" id="typeData">
+                    <option value="none" selected disabled hidden>Type</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Supreme">Supreme</option>
+                  </select>
+                </li>
+              </ul>
+              <button type="submit" class="formSubmitButton">
+                <img
+                  src="Assets/search_icon.png"
+                  alt="search"
+                  class="searchIcon"
+                />
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="rightHero">
+          <img src="Assets/hero_image_rv.png" alt="" class="heroImageRv" />
+        </div>
+      </section>
+
+      <!-- Browse Section -->
+      <section class="filterBrowse">
+        <div class="filterBrowseContainer">
+          <h1 class="headingFilterBrowse">Explore Our Range</h1>
+          <div class="fiterBrowseMain">
+            <div class="leftBrowseOptions">
+              <h3>Browse By:</h3>
+
+              <!-- Tabbing -->
+              <div class="filterBrowseButtons">
+                <button
+                  class="categoryBrowseButton tablink"
+                  onclick="openCards(event,'.brandCategoryCards')"
+                >
+                  Category
+                </button>
+                <button
+                  class="brandBrowseButton tablink"
+                  onclick="openCards(event,'.brandBrowseCards')"
+                >
+                  Brand
+                </button>
+                <button class="allBrowseButton" onclick="openAllCards(event)">
+                  View All
+                </button>
+              </div>
+            </div>
+            <div class="allCards">
+              <div class="rightDataCards brandBrowseCards">
+                <div class="card1">
+                  <img
+                    src="Assets/greate_aussie_logo.png"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card2">
+                  <img
+                    src="Assets/sunfinder_logo_large.png"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card3">
+                  <img
+                    src="Assets/kea_brand_logo.png"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card4">
+                  <img
+                    src="Assets/active_brand_logo.png"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+              </div>
+              <div class="rightDataCards brandCategoryCards">
+                <div class="card1">
+                  <img
+                    src="Assets/ClassA_dark_category.svg"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <h4>Class A</h4>
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card2">
+                  <img
+                    src="Assets/ClassB_motorhome_category.svg"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <h4>Class B</h4>
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card3">
+                  <img
+                    src="Assets/ClassC_dark_category.svg"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <h4>Class C</h4>
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+                <div class="card4">
+                  <img
+                    src="Assets/Fifth_wheel_category.svg"
+                    alt=""
+                    class="brandImage"
+                  />
+                  <h4>Fifth Wheel</h4>
+                  <div class="cardButtons">
+                    <button class="cardExploreButton">Explore Now</button>
+                    <button class="cardViewStockButton">View Stock</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Advertisement Product Section -->
+      <section class="advertisedProductSection">
+        <img
+          src="Assets/advertised_product_logo.png"
+          alt=""
+          class="adProductLogo"
+        />
+        <div class="advertisedProductDesc">
+          <div class="headingAdProductDesc">Buy On Based Of Your Lifestyle</div>
+          <div class="contentAdProductDesc">
+            Your trusted caravan dealers in Sydney from 25 years. We are the
+            only authorised dealers in NSW for Avan caravans, campers and
+            motorhomes, Golf campers and Knaus motorhomes. In the market for a
+            used motorhome, caravan or camping trailer?
+          </div>
+          <button class="readMoreAdProduct">Read More</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="firstFooterContainer">
+          <img
+            src="Assets/footer_brand_icon.png"
+            alt=""
+            class="footerBrandIcon"
+          />
+          <div class="firstFooterContent">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </div>
+          <div class="socialButtonContainer">
+            <button class="fBSocialNavContainer">
+              <img src="Assets/fb_logo_white.svg" alt="" class="fBSocialNav" />
+            </button>
+            <button class="instaSocialNavContainer">
+              <img
+                src="Assets/insta_logo_white.png"
+                alt=""
+                class="instaSocialNav"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="secondFooterContainer">
+          <h3 style="margin: 0; color: #ffffff; font-weight: 500">
+            Quick Links
+          </h3>
+          <ul class="secondFooterNavBar computerMode">
+            <li>Home</li>
+            <li>Our Range</li>
+            <li>Brands</li>
+            <li>About us</li>
+            <li>Testimonials</li>
+            <li>Contact us</li>
+          </ul>
+          <div class="secondFooterMobileContent mobileMode">
+            Home | Our Range | Brands | About us | Testimonials | Contact us
+          </div>
+        </div>
+        <div class="thirdFooterContainer">
+          <h3 style="margin: 0; color: #ffffff; font-weight: 500">
+            Other Links
+          </h3>
+          <ul class="thirdFooterNavBar computerMode">
+            <li>Search Stock</li>
+            <li>Locations</li>
+            <li>Warranty</li>
+            <li>Privacy Policy</li>
+            <li>Sitemap</li>
+          </ul>
+          <div class="thirdFooterMobileContent mobileMode">
+            Search Stock | Locations | Warranty | Privacy Policy | Sitemap
+          </div>
+        </div>
+        <div class="fourthFooterContainer">
+          <h3 style="margin: 0; color: #ffffff; font-weight: 500">
+            Contact Details
+          </h3>
+          <ul class="fourthFooterNavBar">
+            <li class="fourthFooterAddress">
+              334 Princess highway, bomaderry, new south wales, 2541.
+            </li>
+            <li class="fourthFooterPhone">02 4422 4200</li>
+            <li class="fourthFooterEmail">info@rvcentral.com.au</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerMain">
+        <div class="copyrightFooter">
+          Copyright © 2022 RV Central. All rights reserved.
+        </div>
+        <div class="poweredByFooter">
+          Powered by :
+          <a href="mailto:mohiyaddeenraza7@gmail.com">
+            mohiyaddeenraza7@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
