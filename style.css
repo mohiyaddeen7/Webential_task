@@ -839,7 +839,7 @@ footer {
   .selectLocationForm {
     width: 100% !important;
     border-radius: 10px;
-    border: 2px solid black !important;
+    border: 0.5px solid rgba(33, 33, 33, 0.25) !important;
   }
   .newOrUsedAndMakeSearchInput {
     width: 80%;
@@ -857,22 +857,22 @@ footer {
   .selectNewOrUsedForm {
     width: 49% !important;
     border-radius: 10px;
-    border: 2px solid black !important;
+    border: 0.5px solid rgba(33, 33, 33, 0.25) !important;
   }
   .selectMakeForm {
     width: 49% !important;
     border-radius: 10px;
-    border: 2px solid black !important;
+    border: 0.5px solid rgba(33, 33, 33, 0.25) !important;
   }
   .selectModelForm {
     width: 49% !important;
     border-radius: 10px;
-    border: 2px solid black !important;
+    border: 0.5px solid rgba(33, 33, 33, 0.25) !important;
   }
   .selectTypeForm {
     width: 49% !important;
     border-radius: 10px;
-    border: 2px solid black !important;
+    border: 0.5px solid rgba(33, 33, 33, 0.25) !important;
   }
   .formSubmitButton {
     width: 80%;
